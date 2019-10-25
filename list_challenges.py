@@ -130,3 +130,18 @@ def append_size(lst):
 
 # test the function
 print(append_size([4, 3, 2, 1])) # output will be [4, 3, 2, 1 ,4]
+
+# 10.
+# Create a function called every_three_nums that has one parameter named start.
+# The function should return a list of every third number between start and 100 (inclusive).
+
+def every_three_nums(start):
+  lst = list(range(start, 100, 3))
+  if start > 100:
+    lst = []
+    return lst
+  else:
+    return lst + [100]
+
+# test the function
+print(every_three_nums(50)) # output will be [50, 53, 56, 59, 62, 65, 68, 71, 74, 77, 80, 83, 86, 89, 92, 95, 98, 100]
